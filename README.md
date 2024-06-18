@@ -1,4 +1,4 @@
-# Tiny Callback URL Test Server
+# Tiny Server
 
 This is a simple test server that listens for HTTP requests and logs the request data to the console.
 
