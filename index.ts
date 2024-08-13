@@ -12,7 +12,7 @@ app.post("/", (req: Request, res: Response) => {
   const requestBody = req.body;
 
   // Log the request body
-  console.log("Request body:", requestBody);
+  console.log("Request body:", JSON.stringify(requestBody, null, 2));
 
   // Send a response back to the client
   res.status(200).send("msg received");

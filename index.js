@@ -13,7 +13,7 @@ app.use(body_parser_1.default.json());
 app.post("/", (req, res) => {
     const requestBody = req.body;
     // Log the request body
-    console.log("Request body:", requestBody);
+    console.log("Request body:", JSON.stringify(requestBody, null, 2));
     // Send a response back to the client
     res.status(200).send("msg received");
 });
